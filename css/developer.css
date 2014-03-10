@@ -1,0 +1,74 @@
+/*
+ * @file Developer CSS
+ * --------------------------------------------------------------------------------- */
+
+/* Highlight items that do not have attributes set
+ * --------------------------------------------------------------------------------- */
+
+/* Links */
+a[href="#"], a[href=""] {
+  outline: 1px dashed #e21a23;
+}
+
+/* Images */
+img[alt=""] {
+  outline: 1px dashed #e21a23;
+}
+
+
+/* Highlight widget areas
+ * --------------------------------------------------------------------------------- */
+.widget-area {
+  outline: 1px dashed #e21a23;
+}
+
+.widget-area:hover {
+  background-color: #ffffbd;
+}
+
+
+/* Display responsive information
+ * --------------------------------------------------------------------------------- */
+#wfed {
+  color: #fff;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  z-index: 2147483647; /* pretty much the highest value possible to ensure we are above every other element */
+}
+
+#wfed-inner {
+  background-color: #e21a23;
+  padding: 4px 4px 4px 0;
+}
+
+#wfed-info {
+  background-color: #e21a23;
+  border: 1px solid #fff;
+  border-left: none;
+  padding: 6px;
+}
+
+#wfed-info:after {
+  color: #fff;
+  display: block;
+  margin: 4px 0 0 0;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 640px) {
+  #wfed-info:after {
+    content: "Resolution: Mobile";
+  }
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  #wfed-info:after {
+    content: "Resolution: Tablet";
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  #wfed-info:after {
+    content: "Resolution: Desktop";
+  }
+}
