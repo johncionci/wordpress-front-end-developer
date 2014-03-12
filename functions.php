@@ -9,7 +9,7 @@
  * License: GPLv2 or later
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
  *
- * Copyright 2012-2014 John Cionci ( WordPress, Inc. )
+ * Copyright 2012-2014 John Cionci
  *
  * GNU General Public License, Free Software Foundation <http://creativecommons.org/licenses/GPL/2.0/>
  *
@@ -36,7 +36,7 @@
  * @return null
  */
 function wfed_scripts() {
-	$ver = '1.0';
+	$ver = '1.1';
 
 	/* Load the neccessary CSS */
 	wp_enqueue_style( 'wfed-css', plugins_url( '/css/developer.css', __FILE__ ) , NULL , $ver , 'screen' );

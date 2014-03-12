@@ -22,15 +22,18 @@ img[alt=""] {
   outline: 1px dashed #e21a23;
 }
 
+/*
 .widget-area:hover {
   background-color: #ffffbd;
 }
-
+*/
 
 /* Display responsive information
  * --------------------------------------------------------------------------------- */
 #wfed {
   color: #fff;
+  font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+  font-size: 14px;
   position: fixed;
   top: 50%;
   left: 0;
@@ -39,14 +42,13 @@ img[alt=""] {
 
 #wfed-inner {
   background-color: #e21a23;
-  padding: 4px 4px 4px 0;
 }
 
 #wfed-info {
   background-color: #e21a23;
-  border: 1px solid #fff;
+  border: 2px solid #fff;
   border-left: none;
-  padding: 6px;
+  padding: 8px;
 }
 
 #wfed-info:after {
