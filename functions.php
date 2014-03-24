@@ -1,10 +1,10 @@
 <?php
 /**
  * Plugin Name: WordPress Front-End Developer
- * Plugin URI: http://www.wordpressinc.com/wordpress-front-end-developer
+ * Plugin URI: https://github.com/johncionci/wordpress-front-end-developer
  * Description: WordPress Front End Developer provides an easy way for theme developers see exactly what viewport resolution they are currently viewing.
  * Version: 1.0
- * Author: John Cionci | @johncionci
+ * Author: John Cionci
  * Author URI: https://github.com/johncionci/wordpress-front-end-developer
  * License: GPLv2 or later
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -36,7 +36,7 @@
  * @return null
  */
 function wfed_scripts() {
-	$ver = '1.1';
+	$ver = '1.2';
 
 	/* Load the neccessary CSS */
 	wp_enqueue_style( 'wfed-css', plugins_url( '/css/developer.css', __FILE__ ) , NULL , $ver , 'screen' );
