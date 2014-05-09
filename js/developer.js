@@ -4,19 +4,20 @@
  * then information is updated using the resize function.
  * --------------------------------------------------------------------------------- */
 
-var start_width = jQuery(window).width() + 'px';
-var start_height = jQuery(window).height() + 'px';
+var start_width = jQuery(window).width();
+var start_height = jQuery(window).height();
 
 jQuery(document).ready(function() {
-  jQuery('body').after('<div id="wfed"><div id="wfed-inner"><div id="wfed-info">Screen Size: <span id="width">' + start_width + '</span> X <span id="height">' + start_height + '</span></div></div></div>');
+	jQuery('#wfed #width').text(start_width);
+	jQuery('#wfed #height').text(start_height);
 });
 
 jQuery(window).resize(function() {
 
-	var the_width = jQuery(window).width() + 'px';
-	var the_height = jQuery(window).height() + 'px';
+	var the_width = jQuery(window).width();
+	var the_height = jQuery(window).height();
 
-	jQuery('#width').text(the_width);
-	jQuery('#height').text(the_height);
+	jQuery('#wfed #width').text(the_width);
+	jQuery('#wfed #height').text(the_height);
 
 });

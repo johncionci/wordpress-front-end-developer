@@ -1,4 +1,4 @@
-wordpress-front-end-developer
+Wordpress Frontend Developer
 =============================
 
 WordPress Front End Developer provides an easy way for theme developers see exactly what viewport resolution they are currently viewing.
@@ -6,6 +6,8 @@ WordPress Front End Developer provides an easy way for theme developers see exac
 == Full Description ==
 
 WordPress Front End Developer provides an easy way for theme developers see exactly what viewport resolution they are currently viewing.
+In version 2.0 WFED is now hooked into the admin toolbar!
+
 Other features include:
 * Displays common media query resolutions ( ie. Mobile, Tablet, Desktop )
 * Highlights defined widget areas
@@ -16,19 +18,5 @@ Other features include:
 
 This section describes how to install the plugin and get it working.
 
-1. Upload `wordpress-front-end-developer` to the `/wp-content/plugins/` directory
+1. Upload `wp-front-end-developer` to the `/wp-content/plugins/` directory
 1. Activate the plugin through the 'Plugins' menu in WordPress
-
-== Changelog ==
-
-= 1.1 =
-* Update css for visual appearance
-* Update readme.md for github
-* Bump version vars
-
-= 1.0 =
-* Complete rewrite of the plugin
-* Add appropriate licenses and headers to cpmply with WordPress best practices
-
-= 0.1 =
-* Initial plugin concept code
